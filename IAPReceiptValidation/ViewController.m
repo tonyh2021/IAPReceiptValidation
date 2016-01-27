@@ -41,6 +41,7 @@
                                       };
     */
     //在这里我直接用我们项目中的receipt字符串啦，上面的代码当然就省掉咯
+    //另外为了保密，receipt.data里的字符串也改动过，麻烦大家用自己的receipt啦
     NSString *receiptDataPath = [[NSBundle mainBundle] pathForResource:@"receipt" ofType:@"data"];
     NSString *receiptStr = [NSString stringWithContentsOfFile:receiptDataPath encoding:NSUTF8StringEncoding error:nil];
     NSDictionary *requestContents = @{
